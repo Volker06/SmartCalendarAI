@@ -7,7 +7,6 @@
 
 ## Cấu trúc
 - `app/`: ứng dụng Android (Java + XML, MVVM + Room)
-- `backend/`: backend FastAPI gọi LLM API
 
 ## Chạy ứng dụng
 1. Mở thư mục này bằng Android Studio (File > Open).
