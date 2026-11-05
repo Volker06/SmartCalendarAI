@@ -1,0 +1,52 @@
+<resources>
+    <style name="Theme.SmartCalendarAI" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/background</item>
+        <item name="colorSecondary">@color/primary</item>
+        <item name="colorOnSecondary">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorError">@color/danger</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="android:colorAccent">@color/primary</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="WeekdayLabel">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Widget.App.Button.Pill" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">28dp</item>
+        <item name="android:minHeight">52dp</item>
+    </style>
+
+    <style name="Widget.App.Button.Pill.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerRadius">28dp</item>
+        <item name="android:minHeight">52dp</item>
+    </style>
+
+    <style name="Widget.App.Button.Pill.Text" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="cornerRadius">28dp</item>
+        <item name="android:minHeight">52dp</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout.Pill" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">28dp</item>
+        <item name="boxCornerRadiusTopEnd">28dp</item>
+        <item name="boxCornerRadiusBottomStart">28dp</item>
+        <item name="boxCornerRadiusBottomEnd">28dp</item>
+    </style>
+</resources>

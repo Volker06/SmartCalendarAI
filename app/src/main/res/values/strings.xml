@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">Smart Calendar AI</string>
+
+    <string name="title_add_event">Thêm sự kiện</string>
+    <string name="title_edit_event">Sửa sự kiện</string>
+    <string name="empty_events">Không có sự kiện nào trong ngày này</string>
+
+    <string name="quick_add_name_hint">Tên sự kiện</string>
+    <string name="quick_add_time_label">Giờ</string>
+    <string name="notif_channel_name">Nhắc nhở sự kiện</string>
+    <string name="notif_channel_desc">Thông báo trước khi sự kiện diễn ra</string>
+    <string name="notif_text">Bắt đầu lúc %1$s (còn %2$s)</string>
+    <string name="notification_permission_denied">Bạn cần cho phép thông báo để nhận nhắc nhở sự kiện</string>
+    <string name="quick_add_hint">Thêm sự kiện vào %1$s</string>
+    <string name="quick_add_done">Đã thêm sự kiện lúc %1$s</string>
+
+    <string name="hint_title">Tiêu đề</string>
+    <string name="hint_description">Mô tả (không bắt buộc)</string>
+    <string name="label_color">Màu sự kiện</string>
+    <string name="label_category">Phân loại</string>
+    <string name="label_reminder">Nhắc nhở</string>
+
+    <string name="action_ai">Trợ lý AI</string>
+    <string name="action_new_chat">Làm mới</string>
+    <string name="conflict_title">Trùng lịch</string>
+    <string name="conflict_message">Khung giờ này đang có sự kiện khác:\n\n%1$s\n\nBạn vẫn muốn lưu chứ?</string>
+    <string name="conflict_save_anyway">Vẫn lưu</string>
+    <string name="conflict_change">Đổi giờ</string>
+    <string name="chat_conflict">Lưu ý: trùng lịch với\n%1$s</string>
+    <string name="chat_target_not_found">Mình không tìm thấy sự kiện nào khớp với yêu cầu. Bạn thử nêu rõ tên hoặc ngày của sự kiện nhé.</string>
+    <string name="chat_no_change">Mình chưa thấy điều gì thay đổi so với sự kiện hiện tại. Bạn muốn đổi gì nhỉ?</string>
+    <string name="chat_pick_edit">Mình thấy %1$d sự kiện phù hợp. Bạn chọn sự kiện muốn sửa:</string>
+    <string name="chat_pick_delete">Mình thấy %1$d sự kiện phù hợp. Bạn chọn sự kiện muốn xóa:</string>
+    <string name="chat_pick_done">Đã chọn sự kiện</string>
+    <string name="chat_action_edit_title">Xác nhận sửa sự kiện</string>
+    <string name="chat_action_delete_title">Xác nhận xóa sự kiện</string>
+    <string name="chat_action_current">Hiện tại</string>
+    <string name="chat_action_will_delete">Sự kiện sẽ bị xóa</string>
+    <string name="chat_action_after">Sau khi sửa</string>
+    <string name="chat_action_confirm_edit">Xác nhận sửa</string>
+    <string name="chat_action_confirm_delete">Xóa sự kiện</string>
+    <string name="chat_action_cancel">Hủy</string>
+    <string name="chat_action_done_edit">Đã cập nhật sự kiện</string>
+    <string name="chat_action_done_delete">Đã xóa sự kiện</string>
+    <string name="chat_action_cancelled">Đã hủy, sự kiện được giữ nguyên</string>
+    <string name="chat_title">Trợ lý AI</string>
+    <string name="chat_hint">Nhập yêu cầu, ví dụ: Họp nhóm 3 giờ chiều mai</string>
+    <string name="chat_send">Gửi</string>
+    <string name="chat_typing">Trợ lý đang suy nghĩ…</string>
+    <string name="chat_welcome">Xin chào! Mình là trợ lý lịch của bạn. Bạn có thể nói như:\n• “Thêm lịch học Android vào 7 giờ tối mai, kéo dài 2 tiếng”\n• “Tuần tới tôi có những sự kiện gì?”\n• “Dời họp nhóm ngày mai sang 4 giờ chiều”\n• “Xóa buổi học Android”</string>
+    <string name="chat_save">Lưu vào lịch</string>
+    <string name="chat_discard">Bỏ</string>
+    <string name="chat_saved">Đã lưu vào lịch</string>
+    <string name="chat_discarded">Đã bỏ sự kiện này</string>
+    <string name="chat_query_default">Đây là lịch của bạn:</string>
+    <string name="chat_no_events">Bạn không có sự kiện nào trong khoảng thời gian này.</string>
+    <string name="chat_more_events">… và %1$d sự kiện khác</string>
+    <string name="chat_error_network">Không kết nối được tới dịch vụ AI. Hãy kiểm tra mạng Internet của máy.</string>
+    <string name="chat_error_no_key">Chưa có khóa API. Hãy thêm dòng GEMINI_API_KEY=... vào file local.properties rồi Sync Gradle và chạy lại app.</string>
+    <string name="chat_error_invalid_key">Khóa API không hợp lệ hoặc chưa được cấp quyền. Hãy kiểm tra lại GEMINI_API_KEY trong local.properties.</string>
+    <string name="chat_error_model">Không tìm thấy mô hình AI. Hãy đặt GEMINI_MODEL trong local.properties theo danh sách mô hình hiện có.</string>
+    <string name="chat_error_rate_limit">Đã hết lượt dùng AI miễn phí trong lúc này. Bạn thử lại sau ít phút nhé.</string>
+    <string name="chat_error_overloaded">Dịch vụ AI của Google đang quá tải: mình đã thử nhiều mô hình khác nhau nhưng chưa mô hình nào trả lời được. Bạn thử lại sau ít phút nhé.</string>
+    <string name="chat_error_detail">Chi tiết từ dịch vụ: %1$s</string>
+    <string name="chat_error_server">Máy chủ AI gặp lỗi (mã %1$d). Bạn thử lại sau nhé.</string>
+    <string name="chat_parse_failed">Mình chưa hiểu rõ yêu cầu hoặc thời gian của sự kiện. Bạn thử nói rõ hơn nhé.</string>
+    <string name="action_search">Tìm kiếm</string>
+    <string name="search_title">Tìm kiếm</string>
+    <string name="search_hint">Tên sự kiện, tháng hoặc ngày, ví dụ 11/2026 hay 05/11/2026</string>
+    <string name="search_range">Phạm vi tìm kiếm: %1$s – %2$s</string>
+    <string name="search_color_label">Lọc theo màu</string>
+    <string name="search_prompt">Nhập tên sự kiện, tháng/năm (ví dụ 11/2026), ngày/tháng/năm (ví dụ 05/11/2026) hoặc chọn một màu để tìm kiếm</string>
+    <string name="search_invalid_date">Ngày không hợp lệ, hãy kiểm tra lại ngày, tháng và năm</string>
+    <string name="search_empty">Không tìm thấy sự kiện nào</string>
+    <string name="search_out_of_range">Chỉ tìm được trong khoảng %1$s – %2$s</string>
+    <string name="search_result_count">%1$d kết quả</string>
+
+    <string name="action_today">Hôm nay</string>
+    <string name="action_save">Lưu</string>
+    <string name="action_delete">Xóa</string>
+    <string name="action_cancel">Hủy</string>
+    <string name="action_ok">OK</string>
+
+    <string name="end_time_add">+ Thêm giờ kết thúc</string>
+    <string name="end_time_set">Kết thúc lúc %1$s</string>
+    <string name="end_time_next_day">Kết thúc lúc %1$s (hôm sau)</string>
+    <string name="action_clear_end">Bỏ</string>
+
+    <string name="title_start_time">Giờ bắt đầu</string>
+    <string name="title_end_time">Giờ kết thúc</string>
+
+    <string name="error_title_required">Vui lòng nhập tiêu đề</string>
+
+    <string name="dialog_delete_title">Xóa sự kiện</string>
+    <string name="dialog_delete_message_named">Bạn có chắc muốn xóa sự kiện “%1$s”? Hành động này không thể hoàn tác.</string>
+    <string name="toast_deleted">Đã xóa sự kiện</string>
+    <string name="content_delete_event">Xóa sự kiện</string>
+    <string name="content_prev_month">Tháng trước</string>
+    <string name="content_next_month">Tháng sau</string>
+    <string name="events_count">%1$d sự kiện</string>
+    <string name="reminder_before">Nhắc trước %1$s</string>
+    <string name="reminder_fmt_minutes">%1$d phút</string>
+    <string name="reminder_fmt_hours">%1$d giờ</string>
+    <string name="weekday_mon">T2</string>
+    <string name="weekday_tue">T3</string>
+    <string name="weekday_wed">T4</string>
+    <string name="weekday_thu">T5</string>
+    <string name="weekday_fri">T6</string>
+    <string name="weekday_sat">T7</string>
+    <string name="weekday_sun">CN</string>
+    <string name="dialog_delete_message">Bạn có chắc muốn xóa sự kiện này?</string>
+
+    <string-array name="categories">
+        <item>Học tập</item>
+        <item>Công việc</item>
+        <item>Cá nhân</item>
+        <item>Khác</item>
+    </string-array>
+
+    <string-array name="reminder_labels">
+        <item>Không nhắc</item>
+        <item>5 phút trước</item>
+        <item>15 phút trước</item>
+        <item>30 phút trước</item>
+        <item>1 giờ trước</item>
+    </string-array>
+
+    <integer-array name="reminder_values">
+        <item>-1</item>
+        <item>5</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </integer-array>
+</resources>
