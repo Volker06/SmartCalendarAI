@@ -24,6 +24,30 @@
    ```
 3. Sync Gradle, chạy app, bấm biểu tượng ngôi sao trên thanh tiêu đề để trò chuyện với trợ lý.
 
+   ## Clone dự án về máy
+
+### Cách 1: Dùng Android Studio (khuyến nghị)
+1. Mở Android Studio, ở màn hình chào chọn **Get from VCS**
+   (hoặc **File > New > Project from Version Control**).
+2. Dán đường dẫn repository:
+   https://github.com/Volker06/SmartCalendarAI.git
+3. Chọn thư mục lưu trên máy, bấm **Clone**.
+4. Khi hỏi **Trust Project**, chọn **Trust Project**, rồi chờ Gradle sync xong.
+
+### Cách 2: Dùng dòng lệnh
+git clone https://github.com/Volker06/SmartCalendarAI.git
+
+Sau đó mở thư mục `SmartCalendarAI` bằng Android Studio (File > Open),
+chọn đúng thư mục có file `settings.gradle.kts`.
+
+### Yêu cầu môi trường
+- Android Studio bản mới, Android SDK Platform 35.
+- Gradle JDK 17 hoặc 21 (Settings > Build, Execution, Deployment > Build Tools > Gradle).
+- Máy ảo Android 8.0 trở lên, hoặc điện thoại thật.
+
+Sau khi clone xong, làm tiếp phần **Cấu hình khóa API Gemini** bên dưới
+rồi bấm Run để chạy ứng dụng.
+
 ## Cấu hình khóa API Gemini
 
 File `local.properties` không được đưa lên GitHub (chứa khóa riêng). Cách tạo:
