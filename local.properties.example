@@ -1,0 +1,3 @@
+sdk.dir=ĐƯỜNG_DẪN_ANDROID_SDK
+GEMINI_API_KEY=dán_khóa_API_vào_đây
+GEMINI_MODEL=gemini-3.5-flash-lite

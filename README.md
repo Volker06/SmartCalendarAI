@@ -24,11 +24,24 @@
    ```
 3. Sync Gradle, chạy app, bấm biểu tượng ngôi sao trên thanh tiêu đề để trò chuyện với trợ lý.
 
-## Cấu hình khóa API (không đưa lên Git)
+## Cấu hình khóa API Gemini
 
-Thêm vào file `local.properties` (đã được .gitignore):
+File `local.properties` không được đưa lên GitHub (chứa khóa riêng). Cách tạo:
 
-```
-GEMINI_API_KEY=your_key_here
-GEMINI_MODEL=gemini-3.5-flash-lite
-```
+1. Mở dự án bằng Android Studio, file `local.properties` sẽ tự được tạo ở thư mục gốc
+   (nếu chưa có: chuột phải thư mục gốc > New > File > đặt tên `local.properties`).
+2. Thêm vào cuối file:
+
+   ```
+   GEMINI_API_KEY=khóa_của_bạn
+   GEMINI_MODEL=gemini-3.5-flash-lite
+   ```
+
+3. Lấy khóa miễn phí tại https://aistudio.google.com/apikey
+4. Bấm Sync Gradle rồi chạy lại ứng dụng.
+
+Xem thêm file mẫu `local.properties.example`. Nếu chưa có khóa, ứng dụng vẫn chạy bình thường,
+chỉ riêng màn hình trợ lý AI sẽ báo chưa có khóa API.
+
+> Lưu ý: GitHub chỉ lưu mã nguồn. Dữ liệu sự kiện lưu trong cơ sở dữ liệu Room trên từng thiết bị,
+> nên khi clone về và chạy, lịch sẽ trống.
